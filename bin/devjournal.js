@@ -1,21 +1,27 @@
 #!/usr/bin/env node
 
 import { program } from "commander";
+import fs from "fs";
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+
 import { setupCommand } from "../src/commands/setup.js";
 import { syncCommand } from "../src/commands/sync.js";
 import { readConfig } from "../src/config.js";
 import { readState, writeState, STATE_PATH } from "../src/state.js";
-import fs from "fs";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const pkg = JSON.parse(fs.readFileSync(join(__dirname, '../package.json'), 'utf-8'));
 
 program
   .name("devjournal")
   .description("Automated AI-powered developer journaling CLI")
-  .version("1.0.0");
+  .version(pkg.version);
 
 program
   .command("setup")
   .description(
-    "Configure devjournal — set your Gemini API key and tracked projects",
+    "Configure devjournal — set your Gemini API key, tracked projects and journal repo path",
   )
   .action(setupCommand);
 
