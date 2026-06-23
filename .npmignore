@@ -1,0 +1,6 @@
+cat > .npmignore << 'EOF'
+.DS_Store
+*.log
+.devjournal.json
+.devjournal-state.json
+EOF
