@@ -1,7 +1,7 @@
 {
   "name": "@notmanjit/devjournal",
   "version": "1.0.0",
-  "description": "Automated AI-powered developer journaling CLI that preserves GitHub contribution graphs",
+  "description": "A local CLI tool that automatically turns your daily Git activity into a clean engineering journal and keeps your GitHub contribution graph active.",
   "type": "module",
   "bin": {
     "devjournal": "./bin/devjournal.js"
@@ -11,10 +11,18 @@
     "dev": "node bin/devjournal.js"
   },
   "keywords": [
-    "cli", "developer", "journal", "git", "ai", "gemini", "github", "contributions"
+    "cli", "developer", "journal", "git", "ai", "gemini", "github", "contributions", "productivity", "automation"
   ],
-  "author": "notmanjit",
+  "author": "Manjit",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/notmanjit/Devjournal"
+  },
+  "homepage": "https://github.com/notmanjit/Devjournal#readme",
+  "bugs": {
+    "url": "https://github.com/notmanjit/Devjournal/issues"
+  },
   "dependencies": {
     "@clack/prompts": "^0.7.0",
     "@google/generative-ai": "^0.17.0",
