@@ -4,20 +4,29 @@
   "description": "A local CLI tool that automatically turns your daily Git activity into a clean engineering journal and keeps your GitHub contribution graph active.",
   "type": "module",
   "bin": {
-    "devjournal": "./bin/devjournal.js"
+    "devjournal": "bin/devjournal.js"
   },
   "scripts": {
     "start": "node bin/devjournal.js",
     "dev": "node bin/devjournal.js"
   },
   "keywords": [
-    "cli", "developer", "journal", "git", "ai", "gemini", "github", "contributions", "productivity", "automation"
+    "cli",
+    "developer",
+    "journal",
+    "git",
+    "ai",
+    "gemini",
+    "github",
+    "contributions",
+    "productivity",
+    "automation"
   ],
   "author": "Manjit",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/notmanjit/Devjournal"
+    "url": "git+https://github.com/notmanjit/Devjournal.git"
   },
   "homepage": "https://github.com/notmanjit/Devjournal#readme",
   "bugs": {
